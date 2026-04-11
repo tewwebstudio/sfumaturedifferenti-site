@@ -4,14 +4,9 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✂</text></svg>"/>
-<title>Contatti — Sfumature Differenti Rieti | Prenota il tuo appuntamento</title>
-<meta name="description" content="Prenota un appuntamento da Sfumature Differenti a Rieti. Siamo in Piazza Repubblica, 1. Chiamaci al 0746 218515 o scrivici dal form."/>
-<meta property="og:title" content="Contatti — Sfumature Differenti Rieti"/>
-<meta property="og:description" content="Prenota il tuo appuntamento. Piazza Repubblica, 1 — Rieti. Tel: 0746 218515."/>
-<meta property="og:image" content="assets/img/salone-parrucchiere-donna-rieti-interno.webp"/>
-<meta property="og:type" content="website"/>
-<meta property="og:locale" content="it_IT"/>
-<link rel="canonical" href="https://sfumaturedifferenti.it/contatti.html"/>
+<title>Programma Fedeltà — Sfumature Differenti Rieti</title>
+<meta name="description" content="Iscriviti al programma fedeltà di Sfumature Differenti a Rieti. Accumula punti ad ogni visita, scala i tier Base, Silver e Gold e sblocca vantaggi esclusivi."/>
+<link rel="canonical" href="https://sfumaturedifferenti.it/fidelity.html"/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/thin/style.css"/>
 <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/light/style.css"/>
@@ -48,56 +43,66 @@ nav.scrolled{padding:14px 24px}
 .rv{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
 .rv.in{opacity:1;transform:none}
 .section-label{font-family:'DM Sans',sans-serif;font-size:0.72rem;font-weight:400;letter-spacing:0.35em;color:var(--oro);text-transform:uppercase;display:block;margin-bottom:20px}
-.hero-sec{background:var(--bg-alt);height:40vh;min-height:280px;display:flex;align-items:center;justify-content:center;text-align:center;padding:80px 24px 40px;border-bottom:1px solid var(--border-dim)}
-.hero-sec h1{font-family:'Cormorant Garamond',serif;font-size:2.6rem;font-weight:400;line-height:1.15;color:var(--perla);margin-top:12px}
-.contatti-layout{padding:80px 24px;max-width:1100px;margin:0 auto}
-.contatti-grid{display:grid;grid-template-columns:1fr;gap:64px;align-items:flex-start}
-.form-col h2,.info-col h2{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:400;color:var(--perla);margin-bottom:12px;letter-spacing:0.02em}
-.form-col p{font-size:0.9rem;color:var(--perla-muted);margin-bottom:32px;line-height:1.7}
-.contact-form{display:flex;flex-direction:column;gap:20px}
+
+/* Hero */
+.hero-sec{background:var(--bg-alt);padding:120px 24px 80px;text-align:center;border-bottom:1px solid var(--border-dim)}
+.hero-sec h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,6vw,3.6rem);font-weight:400;color:var(--perla);line-height:1.15;margin:12px 0 20px}
+.hero-sec p{font-size:0.95rem;color:var(--perla-dim);max-width:580px;margin:0 auto;line-height:1.8}
+
+/* Tier cards */
+.tier-sec{padding:80px 24px 0;max-width:960px;margin:0 auto}
+.tier-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+.tier-card{background:var(--bg-card);border:1px solid var(--border-dim);padding:28px 24px;display:flex;flex-direction:column;gap:10px}
+.tier-card.gold{border-color:rgba(184,146,42,0.35)}
+.tier-card.silver{border-color:rgba(184,175,160,0.25)}
+.tier-badge{font-family:'DM Sans',sans-serif;font-size:0.7rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;padding:3px 9px;border:1px solid;display:inline-block;align-self:flex-start}
+.tier-badge.base{color:#6B6560;border-color:#6B6560}
+.tier-badge.silver{color:#B8AFA0;border-color:#B8AFA0}
+.tier-badge.gold{color:var(--oro-light);border-color:var(--oro)}
+.tier-punti{font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:var(--perla);font-weight:400}
+.tier-desc{font-size:0.83rem;color:var(--perla-muted);line-height:1.65}
+
+/* Come funziona */
+.come-sec{padding:80px 24px;max-width:960px;margin:0 auto}
+.step-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:40px}
+.step-item{display:flex;flex-direction:column;gap:12px}
+.step-num{font-family:'Cormorant Garamond',serif;font-size:2.4rem;color:var(--oro);line-height:1;opacity:0.6}
+.step-title{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--perla);font-weight:400}
+.step-desc{font-size:0.85rem;color:var(--perla-muted);line-height:1.7}
+
+/* Form */
+.form-sec{padding:0 24px 100px;max-width:640px;margin:0 auto}
+.form-sec h2{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:400;color:var(--perla);margin-bottom:8px}
+.form-sec p{font-size:0.9rem;color:var(--perla-muted);margin-bottom:36px;line-height:1.7}
+.fidelity-form{display:flex;flex-direction:column;gap:20px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .form-group{display:flex;flex-direction:column;gap:8px}
 .form-group label{font-family:'DM Sans',sans-serif;font-size:0.8rem;font-weight:400;letter-spacing:0.08em;color:var(--perla-dim);text-transform:uppercase}
-.form-group input,.form-group select,.form-group textarea{background:var(--bg-card);border:1px solid var(--border-dim);color:var(--perla-dim);font-family:'DM Sans',sans-serif;font-size:16px;padding:12px 16px;outline:none;transition:border-color 0.3s;width:100%;appearance:none;-webkit-appearance:none}
-.form-group select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236B6560' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;padding-right:40px;cursor:pointer}
-.form-group select option{background:var(--bg-card);color:var(--perla-dim)}
-.form-group textarea{resize:vertical;min-height:120px;line-height:1.6}
-.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--oro)}
-.form-group input::placeholder,.form-group textarea::placeholder{color:var(--perla-muted)}
+.form-group input[type="text"],.form-group input[type="email"],.form-group input[type="tel"],.form-group input[type="date"]{background:var(--bg-card);border:1px solid var(--border-dim);color:var(--perla-dim);font-family:'DM Sans',sans-serif;font-size:16px;padding:12px 16px;outline:none;transition:border-color 0.3s;width:100%}
+.form-group input:focus{border-color:var(--oro)}
+.form-group input::placeholder{color:var(--perla-muted)}
 .form-check{flex-direction:row;align-items:flex-start;gap:12px}
 .form-check input[type="checkbox"]{width:16px;height:16px;min-width:16px;margin-top:3px;cursor:pointer;accent-color:var(--oro);flex-shrink:0}
 .form-check label{font-size:0.82rem;color:var(--perla-muted);letter-spacing:0;text-transform:none;line-height:1.6;cursor:pointer}
 .form-check label a{color:var(--oro);transition:color 0.3s}
 .form-check label a:hover{color:var(--oro-light)}
+.form-error{font-size:0.78rem;color:#E05252;margin-top:4px;display:none}
+.field-error input{border-color:#E05252!important}
+.field-error .form-error{display:block}
 .form-submit{padding:14px 32px;background:var(--oro);color:#0D0D0D;font-family:'DM Sans',sans-serif;font-size:0.82rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;border:none;cursor:pointer;transition:background 0.3s;align-self:flex-start}
 .form-submit:hover{background:var(--oro-light)}
 .form-submit:disabled{opacity:0.6;cursor:not-allowed}
-.fascia-group{display:flex;flex-wrap:wrap;gap:12px;margin-top:4px}
-.fascia-opt{display:flex;align-items:center;gap:8px;cursor:pointer;font-size:0.85rem;color:var(--perla-dim)}
-.fascia-opt input[type="radio"]{width:14px;height:14px;accent-color:var(--oro);cursor:pointer;flex-shrink:0}
-.form-error{font-size:0.78rem;color:#E05252;margin-top:4px;display:none}
-.field-error input,.field-error select,.field-error textarea{border-color:#E05252!important}
-.field-error .form-error{display:block}
-.form-success{display:none;background:rgba(184,146,42,0.08);border:1px solid rgba(184,146,42,0.3);padding:32px;text-align:center}
-.form-success h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:400;color:var(--perla);margin-bottom:12px}
-.form-success p{font-size:0.9rem;color:var(--perla-muted);line-height:1.7}
-.form-success .success-tel{color:var(--oro);font-weight:500}
-.net-error{background:rgba(224,82,82,0.08);border:1px solid rgba(224,82,82,0.25);padding:12px 16px;font-size:0.85rem;color:#E08080;display:none;margin-top:8px}
-.info-col{display:flex;flex-direction:column;gap:0}
-.info-col h2{margin-bottom:32px}
-.info-block{display:flex;align-items:flex-start;gap:16px;padding:20px 0;border-bottom:1px solid var(--border-dim)}
-.info-block:last-of-type{border-bottom:none}
-.info-block i{color:var(--oro);font-size:1.2rem;flex-shrink:0;margin-top:2px}
-.info-block-text{font-size:0.9rem;color:var(--perla-muted);line-height:1.75}
-.info-block-text strong{display:block;font-family:'DM Sans',sans-serif;font-size:0.78rem;font-weight:500;letter-spacing:0.1em;color:var(--perla-dim);text-transform:uppercase;margin-bottom:6px}
-.info-block-text a{color:var(--perla-muted);transition:color 0.3s}
-.info-block-text a:hover{color:var(--oro)}
-.info-social{display:flex;flex-direction:column;gap:12px;padding:20px 0}
-.info-social a{display:flex;align-items:center;gap:12px;font-size:0.88rem;color:var(--perla-muted);transition:color 0.3s}
-.info-social a:hover{color:var(--oro)}
-.info-social i{font-size:1.1rem;color:var(--oro)}
-.mappa{padding:0 24px 80px;max-width:1100px;margin:0 auto}
-.mappa-wrap{border:1px solid var(--border)}
-.mappa-wrap iframe{display:block;width:100%;height:280px}
+.net-error{background:rgba(224,82,82,0.08);border:1px solid rgba(224,82,82,0.25);padding:12px 16px;font-size:0.85rem;color:#E08080;display:none}
+
+/* Successo */
+.form-success{display:none;background:rgba(184,146,42,0.06);border:1px solid rgba(184,146,42,0.25);padding:40px 32px;text-align:center}
+.form-success h3{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:400;color:var(--perla);margin-bottom:16px}
+.form-success p{font-size:0.9rem;color:var(--perla-muted);line-height:1.75;margin-bottom:10px}
+.success-codice{font-family:'Courier New',monospace;font-size:1.4rem;color:var(--oro);letter-spacing:0.2em;margin:12px 0}
+.success-link{display:inline-block;margin-top:20px;padding:12px 28px;background:var(--oro);color:#0D0D0D;font-family:'DM Sans',sans-serif;font-size:0.82rem;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;transition:background 0.3s}
+.success-link:hover{background:var(--oro-light)}
+
+/* Footer */
 footer{background:#0A0A0A;border-top:1px solid var(--border-dim);padding:64px 24px 32px}
 .footer-grid{display:grid;grid-template-columns:1fr;gap:48px;max-width:1100px;margin:0 auto}
 .footer-brand .logo{margin-bottom:16px}
@@ -129,8 +134,11 @@ footer{background:#0A0A0A;border-top:1px solid var(--border-dim);padding:64px 24
 #cookie-accept:hover{background:var(--oro-light)}
 #cookie-necessary{padding:8px 20px;background:transparent;color:var(--perla-muted);border:1px solid var(--border-dim);font-family:'DM Sans',sans-serif;font-size:0.82rem;cursor:pointer;letter-spacing:0.05em;text-transform:uppercase;transition:border-color 0.3s,color 0.3s}
 #cookie-necessary:hover{border-color:var(--border);color:var(--perla-dim)}
+@media(max-width:600px){
+  .tier-grid,.step-grid{grid-template-columns:1fr}
+  .form-row{grid-template-columns:1fr}
+}
 @media(min-width:600px){
-  .hero-sec h1{font-size:3.2rem}
   .footer-grid{grid-template-columns:1fr 1fr}
 }
 @media(min-width:960px){
@@ -138,10 +146,6 @@ footer{background:#0A0A0A;border-top:1px solid var(--border-dim);padding:64px 24
   nav.scrolled{padding:16px 48px}
   .nav-links{display:flex}
   .hamburger{display:none}
-  .hero-sec h1{font-size:3.8rem}
-  .contatti-layout{padding:100px 24px}
-  .contatti-grid{grid-template-columns:1.1fr 0.9fr}
-  .mappa-wrap iframe{height:360px}
   .footer-grid{grid-template-columns:1.5fr 1fr 1.2fr}
 }
 </style>
@@ -158,9 +162,9 @@ footer{background:#0A0A0A;border-top:1px solid var(--border-dim);padding:64px 24
     <a href="chi-siamo.html">Chi Siamo</a>
     <a href="servizi.html">Servizi</a>
     <a href="galleria.html">Galleria</a>
-    <a href="fidelity.html">Fidelity</a>
-    <a href="contatti.html" class="active">Contatti</a>
-    <a href="#contatti" class="nav-cta">Prenota →</a>
+    <a href="fidelity.html" class="active">Fidelity</a>
+    <a href="contatti.html">Contatti</a>
+    <a href="contatti.html#contatti" class="nav-cta">Prenota →</a>
   </div>
   <button class="hamburger" id="hamburger" aria-label="Apri menu">
     <span></span><span></span><span></span>
@@ -172,132 +176,117 @@ footer{background:#0A0A0A;border-top:1px solid var(--border-dim);padding:64px 24
   <a href="chi-siamo.html">Chi Siamo</a>
   <a href="servizi.html">Servizi</a>
   <a href="galleria.html">Galleria</a>
-  <a href="fidelity.html">Fidelity</a>
-  <a href="contatti.html" class="active">Contatti</a>
-  <a href="#contatti" class="nav-cta">Prenota →</a>
+  <a href="fidelity.html" class="active">Fidelity</a>
+  <a href="contatti.html">Contatti</a>
+  <a href="contatti.html#contatti" class="nav-cta">Prenota →</a>
 </div>
 
+<!-- ── Hero ───────────────────────────────────────────────────────────────── -->
 <div class="hero-sec">
-  <div>
-    <span class="section-label">Vieni a trovarci</span>
-    <h1>Inizia da qui.</h1>
-  </div>
+  <span class="section-label">Programma esclusivo</span>
+  <h1>Entra nel nostro<br><em>programma fedeltà</em></h1>
+  <p>Ogni visita conta. Accumula punti, scala i livelli e sblocca vantaggi esclusivi riservati alle nostre clienti più affezionate.</p>
 </div>
 
-<div class="contatti-layout rv" id="contatti">
-  <div class="contatti-grid">
-    <div class="form-col">
-      <h2>Prenota un appuntamento</h2>
-      <p>Compila il form e ti ricontatteremo per confermare data e orario.</p>
-
-      <div class="form-success" id="form-success">
-        <h3>✓ Richiesta ricevuta!</h3>
-        <p>Ti contatteremo al <span class="success-tel" id="success-tel"></span> per confermare<br>la data e l'orario del tuo appuntamento.</p>
-      </div>
-
-      <form id="prenota-form" class="contact-form" novalidate>
-        <div class="form-group" id="fg-nome">
-          <label for="nome">Nome *</label>
-          <input type="text" id="nome" name="nome" placeholder="Es. Maria" autocomplete="given-name"/>
-          <span class="form-error" id="err-nome">Inserisci il tuo nome.</span>
-        </div>
-        <div class="form-group" id="fg-cognome">
-          <label for="cognome">Cognome *</label>
-          <input type="text" id="cognome" name="cognome" placeholder="Es. Rossi" autocomplete="family-name"/>
-          <span class="form-error" id="err-cognome">Inserisci il tuo cognome.</span>
-        </div>
-        <div class="form-group" id="fg-telefono">
-          <label for="telefono">Telefono *</label>
-          <input type="tel" id="telefono" name="telefono" placeholder="333 000 0000" autocomplete="tel"/>
-          <span class="form-error" id="err-telefono">Inserisci un numero di telefono valido.</span>
-        </div>
-        <div class="form-group">
-          <label for="email">Email (opzionale)</label>
-          <input type="email" id="email" name="email" placeholder="la-tua@email.it" autocomplete="email"/>
-        </div>
-        <div class="form-group" id="fg-servizio">
-          <label for="servizio">Servizio *</label>
-          <select id="servizio" name="servizio">
-            <option value="">Caricamento servizi…</option>
-          </select>
-          <span class="form-error" id="err-servizio">Seleziona un servizio.</span>
-        </div>
-        <div class="form-group" id="fg-data">
-          <label for="data_preferita">Data preferita *</label>
-          <input type="date" id="data_preferita" name="data_preferita"/>
-          <span class="form-error" id="err-data">Seleziona una data.</span>
-        </div>
-        <div class="form-group">
-          <label>Fascia oraria preferita</label>
-          <div class="fascia-group">
-            <label class="fascia-opt"><input type="radio" name="fascia_oraria" value="mattina"/> Mattina</label>
-            <label class="fascia-opt"><input type="radio" name="fascia_oraria" value="pomeriggio"/> Pomeriggio</label>
-            <label class="fascia-opt"><input type="radio" name="fascia_oraria" value="indifferente" checked/> Indifferente</label>
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="note">Note (opzionale)</label>
-          <textarea id="note" name="note" rows="3" placeholder="Raccontaci cosa stai cercando…"></textarea>
-        </div>
-        <div class="net-error" id="net-error">Errore di connessione. Riprova o chiamaci al <strong>0746 218515</strong>.</div>
-        <button type="submit" class="form-submit" id="btn-submit">Invia richiesta →</button>
-      </form>
+<!-- ── Tier ────────────────────────────────────────────────────────────────── -->
+<section class="tier-sec rv">
+  <span class="section-label">I livelli</span>
+  <h2 style="font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:400;color:var(--perla)">Base · Silver · Gold</h2>
+  <div class="tier-grid">
+    <div class="tier-card">
+      <span class="tier-badge base">Base</span>
+      <div class="tier-punti">0 – 499 pt</div>
+      <div class="tier-desc">Entri nel programma appena ti iscrivi. Ogni euro speso vale 1 punto. Accedi alla tua card digitale e tieni traccia dei tuoi progressi.</div>
     </div>
-    <div class="info-col">
-      <h2>Dove siamo</h2>
-      <div class="info-block">
-        <i class="ph-light ph-map-pin"></i>
-        <div class="info-block-text">
-          <strong>Indirizzo</strong>
-          Piazza Repubblica, 1<br>02100 Rieti (RI)
-        </div>
-      </div>
-      <div class="info-block">
-        <i class="ph-light ph-phone"></i>
-        <div class="info-block-text">
-          <strong>Telefono</strong>
-          <a href="tel:0746218515">0746 218515</a><br>
-          <span style="font-size:0.82rem">(chiamaci o mandaci un messaggio WhatsApp)</span>
-        </div>
-      </div>
-      <div class="info-block">
-        <i class="ph-light ph-clock"></i>
-        <div class="info-block-text">
-          <strong>Orari</strong>
-          Martedì – Giovedì: &nbsp;9:00 – 17:00<br>
-          Venerdì: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9:00 – 19:00<br>
-          Sabato: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9:00 – 14:00<br>
-          <span style="color:var(--perla-muted);font-size:0.82rem">Lunedì e domenica: chiuso</span>
-        </div>
-      </div>
-      <div class="info-social">
-        <a href="https://www.facebook.com/sfumaturedifferenticdc" target="_blank" rel="noopener">
-          <i class="ph-light ph-facebook-logo"></i>
-          <span>facebook.com/sfumaturedifferenticdc</span>
-        </a>
-        <a href="https://www.instagram.com/degrade_conseil_rieti" target="_blank" rel="noopener">
-          <i class="ph-light ph-instagram-logo"></i>
-          <span>@degrade_conseil_rieti</span>
-        </a>
-      </div>
+    <div class="tier-card silver">
+      <span class="tier-badge silver">Silver</span>
+      <div class="tier-punti">500 – 1499 pt</div>
+      <div class="tier-desc">Hai dimostrato la tua fedeltà. Ricevi comunicazioni riservate e accesso prioritario alle promozioni stagionali.</div>
+    </div>
+    <div class="tier-card gold">
+      <span class="tier-badge gold">Gold</span>
+      <div class="tier-punti">1500+ pt</div>
+      <div class="tier-desc">Il massimo del riconoscimento. Trattamenti esclusivi, sorprese speciali nel giorno del compleanno e accesso ai nuovi servizi in anteprima.</div>
     </div>
   </div>
-</div>
+</section>
 
-<div class="mappa rv">
-  <div class="mappa-wrap">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2961.847!2d12.853278!3d42.404637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61b5ebffffff%3A0xb9c5e6b5e6b5e6b5!2sPiazza+della+Repubblica%2C+1%2C+02100+Rieti+RI!5e0!3m2!1sit!2sit!4v1711500000000!5m2!1sit!2sit"
-      width="100%"
-      height="360"
-      style="border:none;filter:grayscale(0.3) invert(0.05);display:block"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-      title="Sfumature Differenti — Piazza Repubblica 1, Rieti">
-    </iframe>
+<!-- ── Come funziona ──────────────────────────────────────────────────────── -->
+<section class="come-sec rv">
+  <span class="section-label">Come funziona</span>
+  <h2 style="font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:400;color:var(--perla)">Tre passi semplici</h2>
+  <div class="step-grid">
+    <div class="step-item">
+      <div class="step-num">01</div>
+      <div class="step-title">Iscriviti</div>
+      <div class="step-desc">Compila il form qui sotto oppure chiedilo direttamente in salone. Riceverai il tuo codice univoco e il link al tuo profilo personale.</div>
+    </div>
+    <div class="step-item">
+      <div class="step-num">02</div>
+      <div class="step-title">Accumula punti</div>
+      <div class="step-desc">1 punto per ogni euro speso. I punti vengono aggiunti automaticamente dopo ogni visita in salone.</div>
+    </div>
+    <div class="step-item">
+      <div class="step-num">03</div>
+      <div class="step-title">Sali di livello</div>
+      <div class="step-desc">Raggiungi i 500 punti per diventare Silver, i 1500 per il Gold. Ogni livello porta con sé riconoscimenti e vantaggi esclusivi.</div>
+    </div>
   </div>
-</div>
+</section>
+
+<!-- ── Form iscrizione ────────────────────────────────────────────────────── -->
+<section class="form-sec rv" id="iscrizione">
+  <span class="section-label">Inizia subito</span>
+  <h2>Iscriviti ora</h2>
+  <p>È gratis e immediato. Inserisci i tuoi dati e ricevi subito il codice della tua card.</p>
+
+  <div class="form-success" id="form-success" style="opacity:1;transform:none;"></div>
+    <h3>Benvenuta!</h3>
+    <p>La tua card è pronta.</p>
+    <div class="success-codice" id="success-codice"></div>
+    <p id="success-email-msg"></p>
+    <a href="#" class="success-link" id="success-profilo-link" target="_blank" rel="noopener" style="display:none">Visualizza il tuo profilo →</a>
+  </div>
+
+  <form id="fidelity-form" class="fidelity-form" novalidate>
+    <div class="form-row">
+      <div class="form-group" id="fg-nome">
+        <label for="f-nome">Nome *</label>
+        <input type="text" id="f-nome" placeholder="Maria" autocomplete="given-name"/>
+        <span class="form-error" id="err-nome">Inserisci il tuo nome.</span>
+      </div>
+      <div class="form-group" id="fg-cognome">
+        <label for="f-cognome">Cognome *</label>
+        <input type="text" id="f-cognome" placeholder="Rossi" autocomplete="family-name"/>
+        <span class="form-error" id="err-cognome">Inserisci il tuo cognome.</span>
+      </div>
+    </div>
+    <div class="form-group" id="fg-email">
+      <label for="f-email">Email *</label>
+      <input type="email" id="f-email" placeholder="la-tua@email.it" autocomplete="email"/>
+      <span class="form-error" id="err-email">Inserisci un indirizzo email valido.</span>
+    </div>
+    <div class="form-group">
+      <label for="f-telefono">Telefono (opzionale)</label>
+      <input type="tel" id="f-telefono" placeholder="333 000 0000" autocomplete="tel"/>
+    </div>
+    <div class="form-group">
+      <label for="f-data-nascita">Data di nascita (opzionale)</label>
+      <input type="date" id="f-data-nascita"/>
+    </div>
+    <div class="form-group form-check">
+      <input type="checkbox" id="f-marketing"/>
+      <label for="f-marketing">Acconsento a ricevere comunicazioni promozionali, offerte e novità del salone (facoltativo).</label>
+    </div>
+    <div class="form-group form-check" id="fg-dati">
+      <input type="checkbox" id="f-dati"/>
+      <label for="f-dati">Ho letto l'<a href="#">informativa sulla privacy</a> e acconsento al trattamento dei miei dati personali ai fini dell'iscrizione al programma fedeltà. *</label>
+      <span class="form-error" id="err-dati">È necessario accettare per procedere.</span>
+    </div>
+    <div class="net-error" id="net-error">Errore di connessione. Riprova o chiamaci al <strong>0746 218515</strong>.</div>
+    <button type="submit" class="form-submit" id="btn-submit">Iscrivimi al programma →</button>
+  </form>
+</section>
 
 <footer>
   <div class="footer-grid">
@@ -317,7 +306,7 @@ footer{background:#0A0A0A;border-top:1px solid var(--border-dim);padding:64px 24
       <a href="galleria.html">Galleria</a>
       <a href="fidelity.html">Fidelity</a>
       <a href="contatti.html">Contatti</a>
-      <a href="#contatti" class="nav-cta">Prenota un appuntamento →</a>
+      <a href="contatti.html#contatti" class="nav-cta">Prenota un appuntamento →</a>
     </div>
     <div class="footer-contact">
       <h4>Contatti &amp; Social</h4>
@@ -385,8 +374,8 @@ document.addEventListener('DOMContentLoaded', function () {
   // ── Reveal on scroll ──────────────────────────────────────────────────────
   var io = new IntersectionObserver(function (entries) {
     entries.forEach(function (x) { if (x.isIntersecting) x.target.classList.add('in'); });
-  }, { threshold: 0.12 });
-  document.querySelectorAll('.rv').forEach(function (el) { io.observe(el); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.rv:not(#form-success)').forEach(function (el) { io.observe(el); });
 
   // ── Cookie banner ─────────────────────────────────────────────────────────
   (function () {
@@ -403,49 +392,16 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('cookie-necessary').addEventListener('click', accept);
   })();
 
-  // ── Data min = domani ─────────────────────────────────────────────────────
-  var datInput = document.getElementById('data_preferita');
-  var domani = new Date(); domani.setDate(domani.getDate() + 1);
-  datInput.min = domani.toISOString().slice(0, 10);
-
-  // ── Carica servizi dall'API ───────────────────────────────────────────────
-  var sel = document.getElementById('servizio');
-  fetch(API_BASE + '/servizi')
-    .then(function (r) { return r.json(); })
-    .then(function (json) {
-      sel.innerHTML = '<option value="">Seleziona un servizio…</option>';
-      if (!json.success) throw new Error('no data');
-      var cats = Object.keys(json.data).sort();
-      cats.forEach(function (cat) {
-        var grp = document.createElement('optgroup');
-        grp.label = cat.charAt(0).toUpperCase() + cat.slice(1);
-        json.data[cat].forEach(function (s) {
-          var opt = document.createElement('option');
-          opt.value = s.id;
-          var durata = s.durata_minuti >= 60
-            ? Math.floor(s.durata_minuti / 60) + 'h' + (s.durata_minuti % 60 ? (s.durata_minuti % 60) + 'min' : '')
-            : s.durata_minuti + 'min';
-          opt.textContent = s.nome + ' — €' + s.prezzo_base + ' · ' + durata;
-          grp.appendChild(opt);
-        });
-        sel.appendChild(grp);
-      });
-    })
-    .catch(function () {
-      sel.innerHTML = '<option value="0">Servizio non disponibile — chiamaci al 0746 218515</option>';
-    });
-
-  // ── Gestione submit ───────────────────────────────────────────────────────
-  var form    = document.getElementById('prenota-form');
+  // ── Form submit ───────────────────────────────────────────────────────────
+  var form    = document.getElementById('fidelity-form');
   var btnSub  = document.getElementById('btn-submit');
   var netErr  = document.getElementById('net-error');
   var success = document.getElementById('form-success');
 
-  function setErr(campo, show) {
-    var fg  = document.getElementById('fg-' + campo);
-    var err = document.getElementById('err-' + campo);
-    if (!fg) return;
-    fg.classList.toggle('field-error', show);
+  function setErr(id, show) {
+    var fg  = document.getElementById('fg-' + id);
+    var err = document.getElementById('err-' + id);
+    if (fg) fg.classList.toggle('field-error', show);
     if (err) err.style.display = show ? 'block' : 'none';
   }
 
@@ -453,51 +409,69 @@ document.addEventListener('DOMContentLoaded', function () {
     e.preventDefault();
     netErr.style.display = 'none';
 
-    var nome     = document.getElementById('nome').value.trim();
-    var cognome  = document.getElementById('cognome').value.trim();
-    var telefono = document.getElementById('telefono').value.trim();
-    var servizio = sel.value;
-    var data     = datInput.value;
-    var fascia   = form.querySelector('input[name="fascia_oraria"]:checked')?.value || 'indifferente';
-    var note     = document.getElementById('note').value.trim();
-    var email    = document.getElementById('email').value.trim();
+    var nome     = document.getElementById('f-nome').value.trim();
+    var cognome  = document.getElementById('f-cognome').value.trim();
+    var email    = document.getElementById('f-email').value.trim();
+    var telefono = document.getElementById('f-telefono').value.trim();
+    var dati     = document.getElementById('f-dati').checked;
+    var marketing = document.getElementById('f-marketing').checked;
 
     var ok = true;
-    setErr('nome',     !nome);     if (!nome)     ok = false;
-    setErr('cognome',  !cognome);  if (!cognome)  ok = false;
-    setErr('telefono', !telefono); if (!telefono) ok = false;
-    setErr('servizio', !servizio); if (!servizio) ok = false;
-    setErr('data',     !data);     if (!data)     ok = false;
+    setErr('nome',    !nome);    if (!nome)    ok = false;
+    setErr('cognome', !cognome); if (!cognome) ok = false;
+    setErr('email',   !email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email));
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) ok = false;
+    setErr('dati', !dati);       if (!dati)    ok = false;
     if (!ok) return;
 
     btnSub.disabled = true;
-    btnSub.textContent = 'Invio in corso…';
+    btnSub.textContent = 'Iscrizione in corso…';
 
-    fetch(API_BASE + '/prenota', {
+    fetch((window.SALON_API_BASE || API_BASE) + '/fidelity/iscriviti', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ nome: nome, cognome: cognome, telefono: telefono,
-        email: email || undefined, servizio_id: servizio ? Number(servizio) : undefined,
-        data_preferita: data, fascia_oraria: fascia, note: note || undefined })
+      body: JSON.stringify({
+        nome: nome, cognome: cognome, email: email,
+        telefono: telefono || undefined,
+        consenso_marketing: marketing,
+        consenso_dati: true,
+      })
     })
       .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, data: j }; }); })
       .then(function (res) {
         if (res.ok && res.data.success) {
+          var d = res.data.data;
           form.style.display = 'none';
-          document.getElementById('success-tel').textContent = telefono;
+
+          // Formatta codice UUID → "A3F8 C2D1 …" (prime 8 cifre in 2 gruppi da 4)
+          var uuid = (d.codice || '').replace(/-/g, '').toUpperCase();
+          var fmt = uuid.slice(0, 4) + ' ' + uuid.slice(4, 8);
+          document.getElementById('success-codice').textContent = fmt;
+
+          if (d.link_profilo) {
+            var m = document.getElementById('success-email-msg');
+            m.textContent = 'Abbiamo inviato il link al tuo profilo a ' + email;
+            var link = document.getElementById('success-profilo-link');
+            link.href = d.link_profilo;
+            link.style.display = 'inline-block';
+          } else if (d.messaggio) {
+            document.getElementById('success-email-msg').textContent = d.messaggio;
+          }
+
           success.style.display = 'block';
+          success.scrollIntoView({ behavior: 'smooth', block: 'center' });
         } else {
-          netErr.innerHTML = res.data.error || 'Errore. Riprova o chiamaci al <strong>0746 218515</strong>.';
+          netErr.innerHTML = (res.data && res.data.error) || 'Errore. Riprova o chiamaci al <strong>0746 218515</strong>.';
           netErr.style.display = 'block';
           btnSub.disabled = false;
-          btnSub.textContent = 'Invia richiesta →';
+          btnSub.textContent = 'Iscrivimi al programma →';
         }
       })
       .catch(function () {
         netErr.innerHTML = 'Errore di connessione. Riprova o chiamaci al <strong>0746 218515</strong>.';
         netErr.style.display = 'block';
         btnSub.disabled = false;
-        btnSub.textContent = 'Invia richiesta →';
+        btnSub.textContent = 'Iscrivimi al programma →';
       });
   });
 });
